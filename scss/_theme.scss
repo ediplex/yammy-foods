@@ -1,0 +1,30 @@
+/**
+ * 基本テーマのスタイル
+ */
+ body {
+   font-family: $base_font-family;
+   font-size: $base_font-size;
+   line-height: $base_line-height;
+   color: $base_color;
+   background-color: $base_background-color;
+ }
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+small {
+  font-size: 80%;
+}
+
+li {
+    list-style-type:none;
+}

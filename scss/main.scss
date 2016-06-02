@@ -1,0 +1,16 @@
+
+// https://sass-guidelin.es/#architecture
+
+@import 'variables';
+@import 'base';
+@import 'layout';
+@import 'theme';
+
+@import 'components/header';
+@import 'components/hero';
+@import 'components/news';
+@import 'components/event';
+@import 'components/ranking';
+@import 'components/feature';
+@import 'components/blog';
+@import 'components/footer';
