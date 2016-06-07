@@ -20,7 +20,6 @@
  * タグのベーススタイル
  */
 html {
-  font-size: 10px;
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -28,6 +27,11 @@ html {
 
 body {
   margin: 0;
+  background: $base_background-color;
+  font-family: $base_font-family;
+  font-size: $base_font-size;
+  color: $base_color;
+  line-height: $base_line-height;
 }
 
 article,
@@ -58,9 +62,13 @@ template {
 a {
   background-color: transparent;
 }
+a:link,
 a:active,
-a:hover {
+a:hover,
+a:visited {
   outline: 0;
+  text-decoration: none;
+  outline: none;
 }
 
 img {

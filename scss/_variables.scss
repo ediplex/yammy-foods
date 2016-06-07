@@ -1,6 +1,12 @@
+//フォント
+$base_font-size: 14px;
+$base_line-height: 1.68;
+$base_color: #60534c;
+$base_font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-$base_font-size: 10px;
-$base_font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base_line-height: 1.42857143;
-$base_color: #333;
-$base_background-color: #fff;
+//背景、ポイントカラー
+$base_background-color: #f6f3ed;
+$off_background-color: #fff;
+$point_color: #2b8ed3;
+
+//その他
