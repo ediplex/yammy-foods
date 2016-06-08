@@ -18,6 +18,7 @@ relative_assets = true
 line_comments = false
 
 cache = false
+sourcemap = true
 
 # If you prefer the indented syntax, you might want to regenerate this
 # project again passing --syntax sass, or you can uncomment this:
