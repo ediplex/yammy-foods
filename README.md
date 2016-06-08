@@ -36,29 +36,92 @@ $ sass -w scss/main.scss:css/main.css
 
 ## 担当
 
-### 川村
-- 全体スタイル
-- サポート
+- 川村
+  - 全体スタイル
+  - サポート
+- 田村
+  - 1. head
+    - metaタグとか
+  - 2. header
+    - ロゴとか
+  - 3. hero
+    - スライド
+- 高橋
+  - 5. event
+    - タブ
+  - 6. ranking
+    - リスト
+- 小幡
+  - 4. news
+    - サムネリスト
+  - 7. feature
+    - カードっぽいやつ
+  - 8. blog
+    - 2段リスト
+  - 9. footer
 
-### 田村
-1. head
-  - metaタグとか
-2. header
-  - ロゴとか
-3. hero
-  - スライド
 
-### 高橋
-5. event
-  - タブ
-6. ranking
-  - リスト
+## compass でのコンパイル
 
-### 小幡
-4. news
-  - サムネリスト
-7. feature
-  - カードっぽいやつ
-8. blog
-  - 2段リスト
-9. footer
+ターミナルを立ち上げて入力してください。
+
+
+- RubyGemsをアップデート
+```
+sudo gem update --system
+```
+
+- Sassをインストール
+```
+sudo gem install sass
+```
+
+- Sassのバージョンをチェック
+バージョンが表示されたらインストールOKです
+```
+sass -v
+```
+
+- Compassをインストール＆バージョンチェック
+```
+sudo gem install compass
+```
+↓
+```
+compass -v
+```
+
+- プロジェクトのルードディレクトリへ移動
+cdコマンドか、Finderで開いているYammy-foodsファイルをまるごとターミナルへ持ってくるかで開きます。
+移動したら、
+```
+compass create
+```
+↓
+sassフォルダ、stylesheetsフォルダ、config.rgが生成されますが、多分消していいと思います。
+
+- configでディレクトリ名を編集する
+```
+http_path = "/"
+css_dir = "css"
+sass_dir = "scss"
+images_dir = "img"
+javascripts_dir = "js"
+```
+に変更
+↓
+```
+sourcemap = true
+```
+を追記（デベロッパツールでスタイルを見るときscssの何行目に記述されているかが表示できるようになる）
+
+- <b>Compassで監視（コンパイル）</b>
+```
+compass w
+```
+もしくは
+```
+compass watch
+```
+
+監視を終了するときは、`control + c`
