@@ -67,7 +67,9 @@ $ sass -w scss/main.scss:css/main.css
 
 
 ・RubyGemsをアップデート
+```
 sudo gem update --system
+```
 
 ・Sassをインストール
 sudo gem install sass
