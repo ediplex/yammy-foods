@@ -1,0 +1,45 @@
+header{
+	padding: 5px 0;}
+
+#header_wrapper{
+	position: relative;
+	height: 150px;
+	.logo{	
+		position: absolute;
+		top: 45px;
+		left: 473px;
+		background-image: url('../img/logo.png') ;
+		background-repeat: no-repeat;
+		height: 70px;
+		width: 302px;
+		text-indent:100%;
+		white-space:nowrap;
+		overflow:hidden;
+		margin: auto;
+		padding: 45px;
+	}
+	.right{
+		display:table;
+		position: absolute;
+		right: 35px;
+		top: 5px;
+		text-align: right;
+		.search{
+			background: #61544d;
+			display: table-cell;
+			width: 193px;
+			height: 25px;
+			input{
+				background-color: #61544d;
+			}
+			span{
+				display: inline-block;
+			}
+		}
+		.social{
+			li{
+				display: table-cell;
+			}
+		}
+	}
+}
