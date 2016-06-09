@@ -94,26 +94,6 @@ compass -v
 - プロジェクトのルードディレクトリへ移動
 cdコマンドか、Finderで開いているYammy-foodsファイルをまるごとターミナルへ持ってくるかで開きます。
 移動したら、
-```
-compass create
-```
-↓
-sassフォルダ、stylesheetsフォルダ、config.rgが生成されますが、多分消していいと思います。
-
-- configでディレクトリ名を編集する
-```
-http_path = "/"
-css_dir = "css"
-sass_dir = "scss"
-images_dir = "img"
-javascripts_dir = "js"
-```
-に変更
-↓
-```
-sourcemap = true
-```
-を追記（デベロッパツールでスタイルを見るときscssの何行目に記述されているかが表示できるようになる）
 
 - <b>Compassで監視（コンパイル）</b>
 ```
@@ -125,3 +105,7 @@ compass watch
 ```
 
 監視を終了するときは、`control + c`
+
+Macが El Capitanの場合はこちらを参照
+http://qiita.com/matsuipome/items/c7dbe1d2df271c7db0ba
+
