@@ -59,3 +59,53 @@ $ sass -w scss/main.scss:css/main.css
   - 8. blog
     - 2段リスト
   - 9. footer
+
+
+## compass でのコンパイル
+
+ターミナルを立ち上げて入力してください。
+
+
+- RubyGemsをアップデート
+```
+sudo gem update --system
+```
+
+- Sassをインストール
+```
+sudo gem install sass
+```
+
+- Sassのバージョンをチェック
+バージョンが表示されたらインストールOKです
+```
+sass -v
+```
+
+- Compassをインストール＆バージョンチェック
+```
+sudo gem install compass
+```
+↓
+```
+compass -v
+```
+
+- プロジェクトのルードディレクトリへ移動
+cdコマンドか、Finderで開いているYammy-foodsファイルをまるごとターミナルへ持ってくるかで開きます。
+移動したら、
+
+- <b>Compassで監視（コンパイル）</b>
+```
+compass w
+```
+もしくは
+```
+compass watch
+```
+
+監視を終了するときは、`control + c`
+
+Macが El Capitanの場合はこちらを参照
+http://qiita.com/matsuipome/items/c7dbe1d2df271c7db0ba
+
