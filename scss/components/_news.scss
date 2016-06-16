@@ -26,6 +26,8 @@
 .news__title-title {
   background-color: #666;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .news__articles {
