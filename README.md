@@ -33,6 +33,7 @@ $ sass -w scss/main.scss:css/main.css
 週次のオフラインMTGでレビューしましょう。
 事前に見て、できればコメントいれていきます。
 
+[プルリクの作り方](https://github.com/ediplex/yummy-foods/wiki/%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9)
 
 ## 担当
 
