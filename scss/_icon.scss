@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'yummy-food';
-    src:    url('../fonts/yamato.eot?jxt7pk');
-    src:    url('../fonts/yamato.eot?jxt7pk#iefix') format('embedded-opentype'),
-        url('../fonts/yamato.ttf?jxt7pk') format('truetype'),
-        url('../fonts/yamato.woff?jxt7pk') format('woff'),
-        url('../fonts/yamato.svg?jxt7pk#yamato') format('svg');
+    src:    url('../fonts/edi.eot?jxt7pk');
+    src:    url('../fonts/edi.eot?jxt7pk#iefix') format('embedded-opentype'),
+        url('../fonts/edi.ttf?jxt7pk') format('truetype'),
+        url('../fonts/edi.woff?jxt7pk') format('woff'),
+        url('../fonts/edi.svg?jxt7pk#yamato') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,4 +27,13 @@
 
 .ymfod-facebook:before {
     content: "\e90a";
+}
+.ymfod-twitter:before {
+    content: "\e617";
+}
+.ymfod-search:before {
+    content: "\e914";
+}
+.ymfod-insta:before {
+    content: "\e";
 }
