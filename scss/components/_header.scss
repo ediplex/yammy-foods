@@ -1,3 +1,4 @@
+
 header{
 	padding: 5px 0;
 	height: 150px;width: 100%;
@@ -26,6 +27,13 @@ header{
 	display: table-cell;
 	width: 193px;
 	height: 25px;
+}
+.icon__box__serch span{
+	color: $WHT;
+}
+.icon__serch{
+	color: $WHT;
+	margin: 5px;
 }
 .icon__box__social li{
 	display: table-cell;
