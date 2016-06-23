@@ -1,0 +1,39 @@
+header{
+	padding: 5px 0;
+	height: 150px;width: 100%;
+}
+.header__logo__tiltle{	
+	background-image: url('../img/logo.png') ;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 70px;
+	width: 302px;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+	margin: auto;
+	padding: 45px;
+}
+.icon__box{
+	display:table;
+	position: absolute;
+	right: 35px;
+	top: 5px;
+	text-align: right;
+}
+.icon__box__serch{
+	background: #61544d;
+	display: table-cell;
+	width: 193px;
+	height: 25px;
+}
+.icon__box__social li{
+	display: table-cell;
+}
+header span{
+				display: inline-block;
+			}
+
+header input{
+				background-color: #61544d;
+			}
