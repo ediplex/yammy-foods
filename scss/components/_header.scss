@@ -16,25 +16,26 @@ header{
 	padding: 45px;
 }
 .box__from-search{
-	margin: 5px 10px;
+	margin-right: 300px;
+ 	margin-left : auto;
 	background: #61544d;
 	width: 193px;
 	height: 25px;
+	padding-right: 0px;
+}
+input{
+	width: 158px;
+	margin: 0 5px;
 }
 .ymfod-search{
+	margin-right: 0;
+ 	margin-left : auto;
 	color: #fff;
-	 margin: auto 5px;
-	 height: 25px;
+	height: 25px;
 }
-.icon__box__serch{
-	
-}
-.icon__box__serch span{
-	color: $WHT;
-}
-.icon__serch{
-	color: $WHT;
-	margin: 5px;
+
+.box-icon-socia{
+
 }
 .icon__box__social li{
 	display: table-cell;
