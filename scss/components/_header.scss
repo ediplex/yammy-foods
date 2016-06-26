@@ -15,18 +15,19 @@ header{
 	margin: auto;
 	padding: 45px;
 }
-.icon__box{
-	display:table;
-	position: absolute;
-	right: 35px;
-	top: 5px;
-	text-align: right;
-}
-.icon__box__serch{
+.box__from-search{
+	margin: 5px 10px;
 	background: #61544d;
-	display: table-cell;
 	width: 193px;
 	height: 25px;
+}
+.ymfod-search{
+	color: #fff;
+	 margin: auto 5px;
+	 height: 25px;
+}
+.icon__box__serch{
+	
 }
 .icon__box__serch span{
 	color: $WHT;
