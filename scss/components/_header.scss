@@ -34,10 +34,13 @@ input{
 	height: 25px;
 }
 
-.box-icon-socia{
-
+.box-icon-social{
+	display: table;
+	float: right;
+	margin-right: 10px;
+ 	margin-left : auto;
 }
-.icon__box__social li{
+.box-icon-social li{
 	display: table-cell;
 }
 header span{
