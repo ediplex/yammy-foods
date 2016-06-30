@@ -1,0 +1,24 @@
+{
+  "name": "yummy-foods",
+  "version": "0.0.1",
+  "description": "コーディング練習のためのサンプルプロジェクトです。",
+  "scripts": {
+    "start": "lite-server -c bs-config.js",
+    "dev": "npm run sass & npm run start",
+    "sass": "node-sass -w scss/ -o css/ --source-map true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ediplex/yummy-foods.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ediplex/yummy-foods/issues"
+  },
+  "homepage": "https://github.com/ediplex/yummy-foods#readme",
+  "devDependencies": {
+    "lite-server": "^2.2.2",
+    "node-sass": "^3.8.0"
+  }
+}
