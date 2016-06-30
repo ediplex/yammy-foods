@@ -6,8 +6,7 @@
   color: #666633;
   border-bottom: dotted solid #cccc33;
 }
-.tab{overflow:hidden;}
-.tab li{background:#f6f3ed; padding:5px 25px; float:left; margin-right:1px;}
-.tab li.select{background:#3399cc;}
-.content li{background:#3399cc; padding:20px;}
-.hide {display:none;}
+.eventBox__tab{overflow:hidden;}
+.eventBox__tab li{background:#f6f3ed; padding:5px 25px; float:left; margin-right:1px;}
+.eventBox__tab li.select{background:#3399cc;}
+.eventBox__list li{background:#3399cc; padding:20px;}
