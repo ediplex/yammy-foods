@@ -1,12 +1,6 @@
 
-.event__title {
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  color: #666633;
-  border-bottom: dotted solid #cccc33;
-}
-.eventBox__tab{overflow:hidden;}
-.eventBox__tab li{background:#f6f3ed; padding:5px 25px; float:left; margin-right:1px;}
-.eventBox__tab li.select{background:#3399cc;}
-.eventBox__list li{background:#3399cc; padding:20px;}
+$event-title-font-family: $base_font-family;
+$event-title-font-size: 30px;
+
+$event-tabs-menu__item-color: $off_background-color;
+$event-tabs-menu__item-backgroundcolor: #3399cc; 
