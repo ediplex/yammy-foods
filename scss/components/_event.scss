@@ -2,6 +2,9 @@
 .event-title{
   font-family: $base_font-family;
   font-size: 30px;
+  font-weight: bold;
+  color: #60534c;
+  //dot保留//
 }
 
 .event-tabs-menu__item{
@@ -19,6 +22,7 @@
   border-radius: 5px;
 }
 
+//-----list(アイコンフォント保留)-----//
 .event-list__box{
   width: 70%;
   line-height: 75%;
