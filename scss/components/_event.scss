@@ -1,6 +1,8 @@
 
-$event-title-font-family: $base_font-family;
-$event-title-font-size: 30px;
+.event-title{
+  font-family: $base_font-family;
+  font-size: 30px;
+}
 
 .event-tabs-menu__item{
   font-family: $base_font-family;
@@ -17,19 +19,37 @@ $event-title-font-size: 30px;
   border-radius: 5px;
 }
 
+.event-list__box{
+  width: 70%;
+  line-height: 75%;
+  list-style: none;
+  font-size: 14px;
+  background-color: $base_background-color;
+  font-family: $base_font-family;
+  padding: 2%;
+}
 
-$event-list-backgroundcolor: $base_background-color;
-$event-list-font-family: $base_background-color;
+.event-list__box_border{
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: rgba(96,83,76,0.2);
+}
 
-$event-list__box-border-bottom: 1px solid #333333;
-$event-list__box-margin-top: 0px;
-$event-list__box-padding-top: 0px;
-$event-list__box-margin-bottom: 0.5em;
-$event-list__box-padding-bottom: 0.5em;
+.event-list-date{
+  line-height: 30%;
+  color: $point_color;
+  font-size: 16px;
+  font-family: Myriad Pro;
+  font-weight: 600;
+}
 
-$event-list-date-color: #3399cc;
-$event-list-date-font-size: 16px;
+.event-list-area{
+  color: $point_color;
+  font-size: 12px;
+}
 
-$event-list-area-font-family: $base_font-family;
-$event-list-area-color: #3399cc;
-$event-list-area-font-size: 12px;
+.event-list-link{
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+}
