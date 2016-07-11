@@ -4,7 +4,12 @@
   font-size: 30px;
   font-weight: bold;
   color: #60534c;
-  //dot保留//
+  //dot保留
+}
+
+.event-tabs-menu{
+  padding: 0;
+  margin: 0;
 }
 
 .event-tabs-menu__item{
@@ -13,26 +18,31 @@
   color: $off_background-color;
   background-color: $point_color;
   font-weight: bold;
-  width: 80px;
-  padding-bottom: 15px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  width: 100px;
+  height: 40px;
+  line-height: 100%;
+  margin: 0;
   display: inline-block;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+  //三角部分保留
 }
 
-//-----list(アイコンフォント保留)-----//
+.event-list{
+  margin: 0;
+  padding: 0;
+}
+
+//アイコンフォント保留
 .event-list__box{
-  width: 70%;
-  line-height: 75%;
+  width: 75%;
+  line-height: 100%;
   list-style: none;
   font-size: 14px;
   background-color: $base_background-color;
   font-family: $base_font-family;
   font-size: $base_font-size;
-  padding: 1% 2% 2%;
+  padding: 10px 20px;
 }
 
 .event-list__box_border{
