@@ -33,6 +33,7 @@ $ sass -w scss/main.scss:css/main.css
 週次のオフラインMTGでレビューしましょう。
 事前に見て、できればコメントいれていきます。
 
+[プルリクの作り方](https://github.com/ediplex/yummy-foods/wiki/%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9)
 
 ## 担当
 
@@ -94,26 +95,6 @@ compass -v
 - プロジェクトのルードディレクトリへ移動
 cdコマンドか、Finderで開いているYammy-foodsファイルをまるごとターミナルへ持ってくるかで開きます。
 移動したら、
-```
-compass create
-```
-↓
-sassフォルダ、stylesheetsフォルダ、config.rgが生成されますが、多分消していいと思います。
-
-- configでディレクトリ名を編集する
-```
-http_path = "/"
-css_dir = "css"
-sass_dir = "scss"
-images_dir = "img"
-javascripts_dir = "js"
-```
-に変更
-↓
-```
-sourcemap = true
-```
-を追記（デベロッパツールでスタイルを見るときscssの何行目に記述されているかが表示できるようになる）
 
 - Compassで監視（コンパイル）
 ```
@@ -125,3 +106,7 @@ compass watch
 ```
 
 監視を終了するときは、`control + c`
+
+Macが El Capitanの場合はこちらを参照
+http://qiita.com/matsuipome/items/c7dbe1d2df271c7db0ba
+
