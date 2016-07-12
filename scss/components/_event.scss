@@ -42,6 +42,7 @@
   background-color: $base_background-color;
   font-family: $base_font-family;
   font-size: $base_font-size;
+  color: $base_color;
   padding: 10px 20px;
 }
 
@@ -52,7 +53,7 @@
 }
 
 .event-list-date{
-  line-height: 30%;
+  margin: 0 0 -7px 0;
   color: $point_color;
   font-size: 16px;
   font-family: Myriad Pro;
@@ -65,7 +66,17 @@
 }
 
 .event-list-link{
+  line-height: 10%;
   text-align: right;
   font-size: 12px;
   font-weight: bold;
+}
+
+a{
+  color: $base_color;
+  text-decoration:none;
+}
+a:hover p{
+  opacity: 0.7;
+
 }
