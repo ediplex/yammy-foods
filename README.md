@@ -96,7 +96,7 @@ compass -v
 cdコマンドか、Finderで開いているYammy-foodsファイルをまるごとターミナルへ持ってくるかで開きます。
 移動したら、
 
-- Compassで監視（コンパイル）
+- <b>Compassで監視（コンパイル）</b>
 ```
 compass w
 ```
