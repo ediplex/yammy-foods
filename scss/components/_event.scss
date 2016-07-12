@@ -29,13 +29,14 @@
 }
 
 .event-list{
+  width: 600px;
+  height: 471px;
   margin: 0;
   padding: 0;
 }
 
 //アイコンフォント保留
 .event-list__box{
-  width: 75%;
   line-height: 100%;
   list-style: none;
   font-size: 14px;
