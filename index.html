@@ -20,12 +20,28 @@
   <div>
   </div>
 <!--<![endif]-->
-  
+
   <title>Yummy Foods</title>
   <!-- TODO -->
   <link rel="stylesheet" href="css/main.css">
-  <script src="/js/tabs.js"></script>
-  
+  <!-- <script src='http://code.jquery.com/jquery.min.js'></script>
+  <script src="../jquery.tabs.js"></script> -->
+  <!-- <script src="../js/tabs.js"></script> -->
+  <!-- <script>
+  $(document).ready( function() {
+    tabify( '#tabs' );
+  });
+  </script> -->
+  <script>
+    $(function(){
+        $("#tabMenu li a").on("click", function() {
+            $("#tabBoxes div").hide();
+            $($(this).attr("href")).fadeToggle();
+        });
+        return false;
+    });
+  </script>
+
 </head>
 <body>
 
@@ -55,12 +71,12 @@
 
         <div class="event-content">
 
-          <ul class="event-tabs-menu">
-            <a href="#"><span class="event-tabs-menu__item"><p>すべて</p></span></a>
-            <a href="#"><span class="event-tabs-menu__item"><p>23区</p></span></a>
-            <a href="#"><span class="event-tabs-menu__item"><p>郊外</p></span></a>
-            <a href="#"><span class="event-tabs-menu__item"><p>神奈川</p></span></a>
-            <a href="#"><span class="event-tabs-menu__item"><p>千葉</p></span></a>
+          <ul class="event-tabs-menu" id="tab">
+            <li><a href="#tab-box1"><p>すべて</p></a></li>
+            <li><a href="#tab-box2"><p>23区</p></a></li>
+            <li><a href="#tab-box3"><p>郊外</p></a></li>
+            <li><a href="#tab-box4"><p>神奈川</p></a></li>
+            <li><a href="#tab-box5"><p>千葉</p></a></li>
           </ul>
 
            <ul class="event-list">
@@ -95,7 +111,10 @@
             　  <a href="#" class="event-list-link"><p>詳細を見る</p></a>
              </li>
             </ul>
-
+          <ul></ul>
+          <ul></ul>
+          <ul></ul>
+          <ul></ul>
         </div>
       </section>
       <section class="ranking">
