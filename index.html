@@ -24,23 +24,17 @@
   <title>Yummy Foods</title>
   <!-- TODO -->
   <link rel="stylesheet" href="css/main.css">
-  <!-- <script src='http://code.jquery.com/jquery.min.js'></script>
-  <script src="../jquery.tabs.js"></script> -->
-  <!-- <script src="../js/tabs.js"></script> -->
+  <script src='http://code.jquery.com/jquery.min.js'></script>
+<script src="../js/tabs.js"></script>
   <!-- <script>
-  $(document).ready( function() {
-    tabify( '#tabs' );
-  });
-  </script> -->
-  <script>
     $(function(){
-        $("#tabMenu li a").on("click", function() {
-            $("#tabBoxes div").hide();
+        $("#event-tabs-menu li a").on("click", function() {
+            $("#event-list__tab-boxes div").hide();
             $($(this).attr("href")).fadeToggle();
         });
         return false;
     });
-  </script>
+  </script> -->
 
 </head>
 <body>
@@ -71,50 +65,52 @@
 
         <div class="event-content">
 
-          <ul class="event-tabs-menu" id="tab">
-            <li><a href="#tab-box1"><p>すべて</p></a></li>
-            <li><a href="#tab-box2"><p>23区</p></a></li>
-            <li><a href="#tab-box3"><p>郊外</p></a></li>
-            <li><a href="#tab-box4"><p>神奈川</p></a></li>
-            <li><a href="#tab-box5"><p>千葉</p></a></li>
+          <ul id="event-tabs-menu" class="clearfix">
+            <li><a href="#event-tab-menu1"><p>すべて</p></a></li>
+            <li><a href="#event-tab-menu2"><p>23区</p></a></li>
+            <li><a href="#event-tab-menu3"><p>郊外</p></a></li>
+            <li><a href="#event-tab-menu4"><p>神奈川</p></a></li>
+            <li><a href="#event-tab-menu5"><p>千葉</p></a></li>
           </ul>
 
-           <ul class="event-list">
-             <li class="event-list__box">
-               <div class="event-list__box_border">
-            　  <div class="event-list-date">2016.06.04 - 2016.06.05</div>
-            　  <div class="event-list-area">谷中・根津・千駄木エリア</div>
-            　  <div class="event-list-title">谷中銀座で日本酒スタンプラリー！10個集めると限定グッズがもらえます</div>
-            　  <a href="#" class="event-list-link"><p>詳細を見る</p></a>
+           <div id="event-list__tab-boxes">
+           <div id="event-list__tab-box1">
+             <ul class="event-list__box1">
+               <div id="event-list__box_border">
+            　  <li class="event-list-date">2016.06.04 - 2016.06.05</li>
+            　  <li class="event-list-area">谷中・根津・千駄木エリア</li>
+            　  <li class="event-list-title">谷中銀座で日本酒スタンプラリー！10個集めると限定グッズがもらえます</li>
+            　  <li class="event-list-link"><a href="#"><p>詳細を見る</p></a></li>
                </div>
-             </li>
-             <li class="event-list__box">
-               <div class="event-list__box_border">
-            　  <div class="event-list-date">2016.06.11</div>
-            　  <div class="event-list-area">お台場エリア</div>
-            　  <div class="event-list-title">今年も開催！お台場でBBQ＆キャンプを楽しもう</div>
-            　  <a href="#" class="event-list-link"><p>詳細を見る</p></a>
+             </ul>
+             <ul class="event-list__box2">
+               <div id="event-list__box_border">
+            　  <li class="event-list-date">2016.06.04 - 2016.06.05</li>
+            　  <li class="event-list-area">谷中・根津・千駄木エリア</li>
+            　  <li class="event-list-title">谷中銀座で日本酒スタンプラリー！10個集めると限定グッズがもらえます</li>
+            　  <li class="event-list-link"><a href="#"><p>詳細を見る</p></a></li>
                </div>
-             </li>
-             <li class="event-list__box">
-               <div class="event-list__box_border">
-            　  <div class="event-list-date">2016.06.20</div>
-            　  <div class="event-list-area">渋谷エリア</div>
-            　  <div class="event-list-title">映画を見ながらコーヒーを楽しもう。大人のカフェ会開催、予約受け付け中</div>
-            　  <a href="#" class="event-list-link"><p>詳細を見る</p></a>
+             </ul>
+             <ul class="event-list__box3">
+               <div id="event-list__box_border">
+            　  <li class="event-list-date">2016.06.04 - 2016.06.05</li>
+            　  <li class="event-list-area">谷中・根津・千駄木エリア</li>
+            　  <li class="event-list-title">谷中銀座で日本酒スタンプラリー！10個集めると限定グッズがもらえます</li>
+            　  <li class="event-list-link"><a href="#"><p>詳細を見る</p></a></li>
                </div>
-             </li>
-             <li class="event-list__box">
-            　  <div class="event-list-date">2016.07.01</div>
-            　  <div class="event-list-area">埼玉エリア</div>
-            　  <div class="event-list-title">武蔵野うどんからすったてまで！隠れたうどん県・埼玉でうどんを食べまくる！</div>
-            　  <a href="#" class="event-list-link"><p>詳細を見る</p></a>
-             </li>
-            </ul>
-          <ul></ul>
-          <ul></ul>
-          <ul></ul>
-          <ul></ul>
+             </ul>
+             <ul class="event-list__box4">
+            　  <li class="event-list-date">2016.06.04 - 2016.06.05</li>
+            　  <li class="event-list-area">谷中・根津・千駄木エリア</li>
+            　  <li class="event-list-title">谷中銀座で日本酒スタンプラリー！10個集めると限定グッズがもらえます</li>
+            　  <li class="event-list-link"><a href="#"><p>詳細を見る</p></a></li>
+             </ul>
+           </div>
+           <div id="event-list__tab-box2"></div>
+           <div id="event-list__tab-box3"></div>
+           <div id="event-list__tab-box4"></div>
+           <div id="event-list__tab-box5"></div>
+           </div>
         </div>
       </section>
       <section class="ranking">

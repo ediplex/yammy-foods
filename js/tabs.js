@@ -1,12 +1,7 @@
-<script type="text/javascript">
-function ChangeTab(tabname) {
-   // 全部消す
-   document.getElementById('tab1').style.display = 'none';
-   document.getElementById('tab2').style.display = 'none';
-   document.getElementById('tab3').style.display = 'none';
-   document.getElementById('tab4').style.display = 'none';
-   document.getElementById('tab5').style.display = 'none';   
-   // 指定箇所のみ表示
-   document.getElementById(tabname).style.display = 'block';
-}
-</script>
+  $(function(){
+      $("#event-tabs-menu li a").on("click", function() {
+          $("#event-list__tab-boxes div").hide();
+          $($(this).attr("href")).fadeToggle();
+      });
+      return false;
+  });

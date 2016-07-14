@@ -12,12 +12,12 @@
     //dot保留
 }
 
-.event-tabs-menu ul{
+#event-tabs-menu ul{
   padding: 0;
   margin: 0;
 }
 
-.event-tabs-menu li{
+#event-tabs-menu li{
   font-family: $base_font-family;
   font-size: $base_font-size;
   color: $off_background-color;
@@ -33,37 +33,92 @@
   //三角部分保留
 }
 
-#tab li a{
+#event-tabs-menu li a{
     color: $off_background-color;
 }
 
-.event-list{
+#event-tab-menu1
+#event-tab-menu2
+#event-tab-menu3
+#event-tab-menu4
+#event-tab-menu5{
   width: 600px;
   height: 470px;
   margin: 0;
   padding: 0;
-  line-height: 100%;
 }
 
+#event-tab-menu2
+#event-tab-menu3
+#event-tab-menu4
+#event-tab-menu5{
+  display:none;
+}
+
+
 //アイコンフォント保留
-.event-list__box{
-  list-style: none;
+.event-list__box1{
+  width: 600px;
+  height: 122px;
+  margin: 0;
+  line-height: 100%;
   font-size: 14px;
   background-color: $base_background-color;
   font-family: $base_font-family;
   font-size: $base_font-size;
   color: $base_color;
-  padding: 10px 20px;
+  padding: 13px 20px 20px 20px;
 }
 
-.event-list__box_border{
-  padding-bottom: 13px;
+.event-list__box2{
+  width: 600px;
+  height: 116px;
+  margin: 0;
+  line-height: 100%;
+  font-size: 14px;
+  background-color: $base_background-color;
+  font-family: $base_font-family;
+  font-size: $base_font-size;
+  color: $base_color;
+  padding: 8px 20px 20px 20px;
+}
+
+.event-list__box3{
+  width: 600px;
+  height: 116px;
+  margin: 0;
+  line-height: 100%;
+  font-size: 14px;
+  background-color: $base_background-color;
+  font-family: $base_font-family;
+  font-size: $base_font-size;
+  color: $base_color;
+  padding: 8px 20px 20px 20px;
+}
+
+.event-list__box4{
+  width: 600px;
+  height: 116px;
+  margin: 0;
+  line-height: 100%;
+  font-size: 14px;
+  background-color: $base_background-color;
+  font-family: $base_font-family;
+  font-size: $base_font-size;
+  color: $base_color;
+  padding: 8px 20px 20px 20px;
+}
+
+
+#event-list__box_border{
+  padding-bottom: 6px;
   border-style: solid;
   border-width: 0 0 1px 0;
   border-color: rgba(96,83,76,0.2);
 }
 
 .event-list-date{
+  line-height: 80%;
   margin: 0 0 -7px 0;
   color: $point_color;
   font-size: 16px;
