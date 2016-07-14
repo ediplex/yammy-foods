@@ -25,17 +25,7 @@
   <!-- TODO -->
   <link rel="stylesheet" href="css/main.css">
   <script src='http://code.jquery.com/jquery.min.js'></script>
-<script src="../js/tabs.js"></script>
-  <!-- <script>
-    $(function(){
-        $("#event-tabs-menu li a").on("click", function() {
-            $("#event-list__tab-boxes div").hide();
-            $($(this).attr("href")).fadeToggle();
-        });
-        return false;
-    });
-  </script> -->
-
+  <script src="../js/tabs.js"></script>
 </head>
 <body>
 
@@ -58,61 +48,66 @@
       おいしいものニュース
     </section>
 
-    <section class="">
+    <section class="event_ranking">
 
       <section class="event">
+
         <div class="event-title"><p>新着イベント</p></div>
 
         <div class="event-content">
-
+          <!-- tabs-menuここから -->
           <ul id="event-tabs-menu" class="clearfix">
-            <li><a href="#event-tab-menu1"><p>すべて</p></a></li>
-            <li><a href="#event-tab-menu2"><p>23区</p></a></li>
-            <li><a href="#event-tab-menu3"><p>郊外</p></a></li>
-            <li><a href="#event-tab-menu4"><p>神奈川</p></a></li>
-            <li><a href="#event-tab-menu5"><p>千葉</p></a></li>
+            <li><a href="#event-list__tab-box1"><p>すべて</p></a></li>
+            <li><a href="#event-list__tab-box2"><p>23区</p></a></li>
+            <li><a href="#event-list__tab-box3"><p>郊外</p></a></li>
+            <li><a href="#event-list__tab-box4"><p>神奈川</p></a></li>
+            <li><a href="#event-list__tab-box5"><p>千葉</p></a></li>
           </ul>
+          <!-- tabs-menuここまで -->
 
+          <!-- list-boxesここから -->
            <div id="event-list__tab-boxes">
            <div id="event-list__tab-box1">
-             <ul class="event-list__box1">
-               <div id="event-list__box_border">
+             <ul class="event-list__content1">
+               <div id="event-list-border">
             　  <li class="event-list-date">2016.06.04 - 2016.06.05</li>
             　  <li class="event-list-area">谷中・根津・千駄木エリア</li>
             　  <li class="event-list-title">谷中銀座で日本酒スタンプラリー！10個集めると限定グッズがもらえます</li>
             　  <li class="event-list-link"><a href="#"><p>詳細を見る</p></a></li>
                </div>
              </ul>
-             <ul class="event-list__box2">
-               <div id="event-list__box_border">
+             <ul class="event-list__content2">
+               <div id="event-list-border">
             　  <li class="event-list-date">2016.06.04 - 2016.06.05</li>
             　  <li class="event-list-area">谷中・根津・千駄木エリア</li>
             　  <li class="event-list-title">谷中銀座で日本酒スタンプラリー！10個集めると限定グッズがもらえます</li>
             　  <li class="event-list-link"><a href="#"><p>詳細を見る</p></a></li>
                </div>
              </ul>
-             <ul class="event-list__box3">
-               <div id="event-list__box_border">
+             <ul class="event-list__content3">
+               <div id="event-list-border">
             　  <li class="event-list-date">2016.06.04 - 2016.06.05</li>
             　  <li class="event-list-area">谷中・根津・千駄木エリア</li>
             　  <li class="event-list-title">谷中銀座で日本酒スタンプラリー！10個集めると限定グッズがもらえます</li>
             　  <li class="event-list-link"><a href="#"><p>詳細を見る</p></a></li>
                </div>
              </ul>
-             <ul class="event-list__box4">
+             <ul class="event-list__content4">
             　  <li class="event-list-date">2016.06.04 - 2016.06.05</li>
             　  <li class="event-list-area">谷中・根津・千駄木エリア</li>
             　  <li class="event-list-title">谷中銀座で日本酒スタンプラリー！10個集めると限定グッズがもらえます</li>
             　  <li class="event-list-link"><a href="#"><p>詳細を見る</p></a></li>
              </ul>
            </div>
-           <div id="event-list__tab-box2"></div>
-           <div id="event-list__tab-box3"></div>
-           <div id="event-list__tab-box4"></div>
-           <div id="event-list__tab-box5"></div>
+           <div id="event-list__tab-box2">event-list__tab-box2</div>
+           <div id="event-list__tab-box3">event-list__tab-box3</div>
+           <div id="event-list__tab-box4">event-list__tab-box4</div>
+           <div id="event-list__tab-box5">event-list__tab-box5</div>
            </div>
         </div>
+        <!-- list-boxesここまで -->
       </section>
+
       <section class="ranking">
         <div class="ranking__title">ランキング</div>
       </section>

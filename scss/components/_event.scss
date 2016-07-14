@@ -1,6 +1,12 @@
-.event{
+
+.event_ranking{
   padding: 20px 80px;
   background-color: $off_background-color;
+}
+
+.event{
+  width: 600px;
+  height: auto;
 }
 
 .event-title{
@@ -12,6 +18,7 @@
     //dot保留
 }
 
+//メニュー
 #event-tabs-menu ul{
   padding: 0;
   margin: 0;
@@ -37,27 +44,51 @@
     color: $off_background-color;
 }
 
-#event-tab-menu1
-#event-tab-menu2
-#event-tab-menu3
-#event-tab-menu4
-#event-tab-menu5{
+//リストボックス
+#event-list__tab-box1{
+  background-color: $base_background-color;
   width: 600px;
-  height: 470px;
+  height:470px;
   margin: 0;
   padding: 0;
 }
 
-#event-tab-menu2
-#event-tab-menu3
-#event-tab-menu4
-#event-tab-menu5{
-  display:none;
+#event-list__tab-box2{
+  background-color: $base_background-color;
+  width: 600px;
+  height:470px;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+#event-list__tab-box3{
+  background-color: $base_background-color;
+  width: 600px;
+  height:470px;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+#event-list__tab-box4{
+  background-color: $base_background-color;
+  width: 600px;
+  height:470px;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+#event-list__tab-box5{
+  background-color: $base_background-color;
+  width: 600px;
+  height:470px;
+  margin: 0;
+  padding: 0;
+  display: none;
 }
 
 
-//アイコンフォント保留
-.event-list__box1{
+//リストボックス内__アイコンフォント保留
+.event-list__content1{
   width: 600px;
   height: 122px;
   margin: 0;
@@ -70,7 +101,7 @@
   padding: 13px 20px 20px 20px;
 }
 
-.event-list__box2{
+.event-list__content2{
   width: 600px;
   height: 116px;
   margin: 0;
@@ -83,7 +114,7 @@
   padding: 8px 20px 20px 20px;
 }
 
-.event-list__box3{
+.event-list__content3{
   width: 600px;
   height: 116px;
   margin: 0;
@@ -96,7 +127,7 @@
   padding: 8px 20px 20px 20px;
 }
 
-.event-list__box4{
+.event-list__content4{
   width: 600px;
   height: 116px;
   margin: 0;
@@ -110,7 +141,7 @@
 }
 
 
-#event-list__box_border{
+#event-list-border{
   padding-bottom: 6px;
   border-style: solid;
   border-width: 0 0 1px 0;
