@@ -2,11 +2,14 @@
 .event_ranking{
   padding: 20px 80px;
   background-color: $off_background-color;
+  display:flex;
 }
 
 .event{
   width: 600px;
   height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .event-title{
@@ -19,156 +22,88 @@
 }
 
 //メニュー
-#event-tabs-menu ul{
+.event-tabs-menu{
   padding: 0;
   margin: 0;
 }
 
-#event-tabs-menu li{
+.event-tabs-menu-item {
   font-family: $base_font-family;
   font-size: $base_font-size;
   color: $off_background-color;
   background-color: $point_color;
   font-weight: bold;
-  width: 100px;
-  height: 40px;
   line-height: 40px;
   margin: 0;
-  display: inline-block;
   text-align: center;
   border-radius: 5px 5px 0 0;
+  display: inline-block;
   //三角部分保留
+
+  &__link {
+    display: block;
+    width: 100px;
+    height: 40px;
+    color: $off_background-color;
+  }
 }
 
-#event-tabs-menu li a{
-    color: $off_background-color;
-}
 
 //リストボックス
-#event-list__tab-box1{
+.event-tabs {
   background-color: $base_background-color;
   width: 600px;
   height:470px;
   margin: 0;
   padding: 0;
 }
-
-#event-list__tab-box2{
-  background-color: $base_background-color;
-  width: 600px;
-  height:470px;
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-#event-list__tab-box3{
-  background-color: $base_background-color;
-  width: 600px;
-  height:470px;
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-#event-list__tab-box4{
-  background-color: $base_background-color;
-  width: 600px;
-  height:470px;
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-#event-list__tab-box5{
-  background-color: $base_background-color;
-  width: 600px;
-  height:470px;
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-
 
 //リストボックス内__アイコンフォント保留
-.event-list__content1{
-  width: 600px;
-  height: 122px;
+.event-tab {
+  // width: 600px;
   margin: 0;
-  line-height: 100%;
   font-size: 14px;
   background-color: $base_background-color;
   font-family: $base_font-family;
   font-size: $base_font-size;
   color: $base_color;
-  padding: 13px 20px 20px 20px;
+  padding: 15px 20px 20px 20px;
+  display: none;
+  &:first-child {
+    margin: -1.5px;
+  }
+  &:first-child {
+    display: block;
+  }
 }
 
-.event-list__content2{
-  width: 600px;
-  height: 116px;
-  margin: 0;
-  line-height: 100%;
-  font-size: 14px;
-  background-color: $base_background-color;
-  font-family: $base_font-family;
-  font-size: $base_font-size;
-  color: $base_color;
-  padding: 8px 20px 20px 20px;
-}
+.event-list-item {
+  border-bottom: solid 1px rgba(96,83,76,0.2);
+  padding:10px;
+  &:last-child {
+    border: none;
 
-.event-list__content3{
-  width: 600px;
-  height: 116px;
-  margin: 0;
-  line-height: 100%;
-  font-size: 14px;
-  background-color: $base_background-color;
-  font-family: $base_font-family;
-  font-size: $base_font-size;
-  color: $base_color;
-  padding: 8px 20px 20px 20px;
-}
+  }
 
-.event-list__content4{
-  width: 600px;
-  height: 116px;
-  margin: 0;
-  line-height: 100%;
-  font-size: 14px;
-  background-color: $base_background-color;
-  font-family: $base_font-family;
-  font-size: $base_font-size;
-  color: $base_color;
-  padding: 8px 20px 20px 20px;
-}
+  &__date{
+    color: $point_color;
+    font-size: 16px;
+    font-family: Myriad Pro;
+    font-weight: 600;
+  }
 
+  &__area{
+    color: $point_color;
+    font-size: 12px;
+  }
 
-#event-list-border{
-  padding-bottom: 6px;
-  border-style: solid;
-  border-width: 0 0 1px 0;
-  border-color: rgba(96,83,76,0.2);
-}
-
-.event-list-date{
-  line-height: 80%;
-  margin: 0 0 -7px 0;
-  color: $point_color;
-  font-size: 16px;
-  font-family: Myriad Pro;
-  font-weight: 600;
-}
-
-.event-list-area{
-  color: $point_color;
-  font-size: 12px;
-}
-
-.event-list-link{
-  line-height: 100%;
-  text-align: right;
-  font-size: 12px;
-  font-weight: bold;
-  color: $base_color;
-  text-decoration:none;
+  &__link p{
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration:none;
+    color:$base_color;
+  }
 }
 
 a:hover p{

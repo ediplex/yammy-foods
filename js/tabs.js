@@ -1,7 +1,11 @@
   $(function(){
-      $("#event-tabs-menu li a").on("click", function() {
-          $("#event-list__tab-boxes　div").hide();
-          $($(this).attr("href")).fadeToggle();
+      $(".event-tabs-menu-item__link").on("click", function(ev) {
+          ev.preventDefault();
+          var tab = $($(this).attr("href"));
+          if (!tab.is(':visible')) {
+            $(".event-tab").hide();
+            tab.fadeToggle();
+          }
       });
       return false;
   });
