@@ -11,3 +11,9 @@
   margin: 35px 0;
     //dot保留
 }
+
+
+//top30を見る
+.ranking-list-footer__more:before{
+  content:url("img/rank_more.png")
+}
