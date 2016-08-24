@@ -11,9 +11,73 @@
   margin: 35px 0;
     //dot保留
 }
+.ranking-list-item{
+  position: relative;
+  height: 85px;
+  display: flex;
+  padding: 10px 5px;
+  border-top:1px solid #CCC;
+  border-bottom:1px solid #CCC;
+  margin-top: -1px;
+}
+
+li{
+  padding: 10px 5px;
+  border-top:1px solid #CCC;
+  border-bottom:1px solid #CCC;
+  margin-top: -1px;  
+}
+
+}
+//サムネイル
+.ranking-list-item-thumbnail{
+  display: inline-block;
+  position:relative;
+}
+.ranking-list-item__number{
+  // display: inline-block;
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  border-top: 1px solid #2b8ed3;
+  border-right: 12px solid #2b8ed3;
+  border-bottom: 6px solid transparent;
+  border-left: 12px solid #2b8ed3;
+  width: 10px;
+}
+
+.ranking-list-item__number_no{
+  // display: inline-block;
+  font: $base_font-family;
+  color: $off_background-color;
+}
+
+.ranking-list-item-content{
+  display: inline-block;
+  // position: relative;
+  height: 80px;
+  margin: 0;
+}
+
+.ranking-list-item-content__text{
+  font: $base_font-family;
+  font-size: 12px;
+}
+.ranking-list-item-content__time{
+  font: $base_font-family;
+  font-size: 12px;
+  color: $point_color;
+  position: absolute;
+  bottom: 10px;
+  margin: 0;
+}
 
 
 //top30を見る
+.ranking-list-footer__more{
+  float: right;
+}
+
 .ranking-list-footer__more:before{
-  content:url("img/rank_more.png")
+  content:url(/img/rank_more.png);
 }
