@@ -11,6 +11,21 @@
   margin: 35px 0;
     //dot保留
 }
+
+.ranking-title__dots{
+
+}
+
+.ranking-title__dot{
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  background-color: $base_color;
+  opacity: 0.3;
+  display: inline-block;
+
+}
+
 .ranking-list-item{
   position: relative;
   height: 100px;
