@@ -14,6 +14,7 @@
 .ranking-list-item{
   position: relative;
   height: 100px;
+  width: 420px;
   display: flex;
   padding: 10px 10px;
   border-top:1px solid #CCC;
@@ -45,11 +46,13 @@
   color: $off_background-color;
 }
 
+//テキスト系
 .ranking-list-item-content{
   display: inline-block;
   // position: relative;
   height: 80px;
   margin: 0;
+  padding-left: 10px;
 }
 
 .ranking-list-item-content__text{
