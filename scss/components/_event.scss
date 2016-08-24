@@ -18,7 +18,20 @@
   font-weight: 600;
   color: #60534c;
   margin: 35px 0;
-    //dot保留
+}
+
+//dot
+.event-title__dots{
+    line-height: 0;
+}
+
+.event-title__dot{
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  background-color: #bbb932;
+  opacity: 0.3;
+  display: inline-block;
 }
 
 //メニュー
@@ -83,6 +96,10 @@
   &:last-child {
     border: none;
 
+  }
+
+  .event-list-item__link:before {
+    content: url(/img/event_more.png);
   }
 
   &__date{
