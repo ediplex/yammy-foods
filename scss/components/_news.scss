@@ -1,5 +1,5 @@
 .news {
-  background-color: #999;
+  // background-color: #999;
   height: 480px;
   width : 1240px;
   display: flex;
@@ -8,7 +8,7 @@
 }
 
 .news__container{
-  background-color: #888;
+  // background-color: #888;
   height: 360px;
   width : 1049px;
   display: flex;
@@ -17,21 +17,21 @@
 }
 
 .news__title {
-  background-color: #777;
+  // background-color: #777;
   height: 50px;
   width : 100%;
   display: flex;
   justify-content: center;
 }
 .news__title-title {
-  background-color: #666;
+  // background-color: #666;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .news__articles {
-  background-color: #777;
+  // background-color: #777;
   width : 100%;
   display: flex;
   justify-content:space-between;
@@ -44,14 +44,14 @@
 // }
 
 .news__article-article {
-  background-color: #555;
+  // background-color: #555;
   width:240px;
   display: flex;
   flex-direction: column;
 }
 
 .news__article-caption {
-  background-color: #999;
+  // background-color: #999;
   width:100%;
   display:flex;
   flex-wrap:wrap;
@@ -59,17 +59,18 @@
 
 
 .news__button {
-  background-color: #777;
+  // background-color: #777;
   width : 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .news__button-button {
-  background-color: #666;
+  background-color: $base_color;
   height: 40px;
   width : 280px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color:$base_background-color;
 }
