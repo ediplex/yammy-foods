@@ -51,7 +51,9 @@
   text-align: center;
   border-radius: 5px 5px 0 0;
   display: inline-block;
+  position: relative;
   //三角部分保留
+
 
   &__link {
     display: block;
@@ -59,6 +61,20 @@
     height: 40px;
     color: $off_background-color;
   }
+}
+
+  .event-tabs-menu-item :after{
+	top: 100%;
+	left: 50%;
+	border-top: 10px solid $point_color;
+  border-bottom: 10px solid transparent;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	margin-left: -7px;
 }
 
 
@@ -80,7 +96,7 @@
   font-family: $base_font-family;
   font-size: $base_font-size;
   color: $base_color;
-  padding: 15px 20px 20px 20px;
+  padding: 5px 20px 20px 20px;
   display: none;
   &:first-child {
     margin: -1.5px;
@@ -92,14 +108,10 @@
 
 .event-list-item {
   border-bottom: solid 1px rgba(96,83,76,0.2);
-  padding:10px;
+  padding:25px 10px;
   &:last-child {
     border: none;
 
-  }
-
-  .event-list-item__link:before {
-    content: url(/img/event_more.png);
   }
 
   &__date{
@@ -114,12 +126,16 @@
     font-size: 12px;
   }
 
-  &__link p{
-    text-align: right;
+  &__link-more{
+    float: right;
     font-size: 12px;
     font-weight: bold;
     text-decoration:none;
     color:$base_color;
+  }
+
+  &__link-more:before {
+    content: url(/img/event_more.png);
   }
 }
 
