@@ -17,19 +17,12 @@
   <meta property="og:description" content="美味しいご飯を紹介するポータルサイト">
 
   <link rel="stylesheet" href="css/slider-pro.min.css">
-  <script src="js/jquery-1.11.0.min.js"></script>
-  <script src="js/jquery.sliderPro.min.js"></script>
-  <script>
-$(function(){
-   $('#slider').sliderPro();
-});
-</script>
 
   <!--[if (gte IE 9)|!(IE)]><!-->
   <div>
   </div>
 <!--<![endif]-->
-  
+
   <title>Yummy Foods</title>
   <!-- TODO -->
   <link rel="stylesheet" href="css/main.css">
@@ -47,7 +40,7 @@ $(function(){
   </header>
 
   <main>
-    <section class="block-mainvisual">
+    <section class="hero-slide">
       <ul id="slider">
         <li class="sp-slides"><img class="sp-image" src="img/silde1.jpg"></li>
         <li class="sp-slides"><img class="sp-image" src="img/silde1.jpg"></li>
@@ -84,4 +77,13 @@ $(function(){
   </footer>
 
 </body>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/jquery.sliderPro.min.js"></script>
+  <script>
+    $(function(){
+    $('#slider').sliderPro();
+    });
+  </script>
+
 </html>
