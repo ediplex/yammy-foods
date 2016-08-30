@@ -21,17 +21,11 @@
 }
 
 //dot
-.event-title__dots{
-    line-height: 0;
-}
-
-.event-title__dot{
-  border-radius: 50%;
-  height: 8px;
-  width: 8px;
+.decorated-title__decoration{
   background-color: #bbb932;
   opacity: 0.3;
-  display: inline-block;
+  font-size: 8px;
+  letter-spacing: 0.6em;
 }
 
 //メニュー
