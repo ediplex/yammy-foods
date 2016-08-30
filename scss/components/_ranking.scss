@@ -18,18 +18,11 @@ $ranking-number-color: $off_background-color;
 }
 
 //dot
-.ranking-title__dots{
-  line-height: 0;
-}
 
-.ranking-title__dot{
-  border-radius: 50%;
-  height: 8px;
-  width: 8px;
-  background-color: $base_color;
+.decorated-title__decoration{
   opacity: 0.3;
-  display: inline-block;
-
+  font-size: 8px;
+  letter-spacing: 0.6em;
 }
 
 .ranking-list-item{
@@ -96,6 +89,9 @@ $ranking-number-color: $off_background-color;
 //top30を見る
 .ranking-list-footer__more{
   float: right;
+  font-weight: bold;
+  text-decoration:none;
+  color:$base_color;
 }
 
 .ranking-list-footer__more:before{
