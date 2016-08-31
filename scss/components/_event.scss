@@ -5,27 +5,24 @@
   display:flex;
 }
 
-.event{
-  width: 600px;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
+// .event{
+//   width: 600px;
+//   height: auto;
+//   margin: 0;
+//   padding: 0;
+// }
 
-.ranking-title{
+.event-title{
   margin: 20px 0;
-}
-
-.decorated-title__text{
   font-family: $base_font-family;
   font-size: 30px;
   font-weight: 600;
   color: #60534c;
-  margin: 35px 0;
+  margin: 20px 0;
 }
 
 //dot
-.decorated-title__decoration{
+.decorated-title__decoration-wrap{
   color: #bbb932;
   opacity: 0.3;
   font-size: 8px;
