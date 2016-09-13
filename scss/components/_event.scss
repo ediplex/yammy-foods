@@ -155,7 +155,10 @@
   }
 
   &__link-more:before {
-    content: url(/img/event_more.png);
+    font-family: FontAwesome;
+    content: "\f111";
+    font-size: 1px;
+    color: #c7b9b1;
   }
 }
 
