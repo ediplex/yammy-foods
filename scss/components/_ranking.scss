@@ -95,5 +95,8 @@ $ranking-number-color: $off_background-color;
 }
 
 .ranking-list-footer__more:before{
-  content:url(/img/rank_more.png);
-}
+  color: #c7b9b1;
+  font-size: 1px;
+  font-family: FontAwesome;
+  content: "\f111";
+  }
