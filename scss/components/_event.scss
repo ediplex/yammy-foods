@@ -1,3 +1,12 @@
+// @font-face {
+//   font-family: 'FontAwesome';
+//   src: url('FontAwesome.eot');
+//   src: url('FontAwesome.eot?iefix') format('eot'),
+//        url('FontAwesome.woff') format('woff'),
+//        url('FontAwesome.ttf') format('truetype'),
+//        url('FontAwesome.svg#webfontjSpbZQRv') format('svg');
+// }
+
 
 .event_ranking{
   padding: 20px 80px;
@@ -116,9 +125,25 @@
     font-weight: 600;
   }
 
+  &__date:before{
+    font-size: 13px;
+    color: $point_color;
+    font-family: FontAwesome;
+    content: "\f073";
+    letter-spacing: 0.5em;
+  }
+
   &__area{
     color: $point_color;
     font-size: 12px;
+  }
+
+  &__area:before{
+    color: $point_color;
+    font-size: 13px;
+    font-family: FontAwesome;
+    content: "\f041";
+    letter-spacing: 0.5em;
   }
 
   &__link-more{
