@@ -16,6 +16,9 @@ a:hover,
 a:active {
   text-decoration: none;
 }
+a:hover {
+  opacity: 0.7;
+}
 
 h1 {
   margin: .67em 0;

@@ -1,12 +1,10 @@
-// @font-face {
-//   font-family: 'FontAwesome';
-//   src: url('FontAwesome.eot');
-//   src: url('FontAwesome.eot?iefix') format('eot'),
-//        url('FontAwesome.woff') format('woff'),
-//        url('FontAwesome.ttf') format('truetype'),
-//        url('FontAwesome.svg#webfontjSpbZQRv') format('svg');
-// }
 
+$event-title-color: $title-color;
+$event-title-size: $title-size;
+$event-title-weight: $title-weight;
+$event-title-margin: $title-margin;
+
+$event-decorated-title-color: #bbb932;
 
 .event_ranking{
   padding: 20px 80px;
@@ -14,28 +12,17 @@
   display:flex;
 }
 
-// .event{
-//   width: 600px;
-//   height: auto;
-//   margin: 0;
-//   padding: 0;
-// }
-
 .event-title{
-  margin: 20px 0;
+  margin: $event-title-margin;
   font-family: $base_font-family;
-  font-size: 30px;
-  font-weight: 600;
-  color: #60534c;
-  margin: 20px 0;
+  font-size: $event-title-size;
+  font-weight: $event-title-weight;
+  color: $event-title-color;
 }
 
 //dot
 .decorated-title__decoration-wrap{
-  color: #bbb932;
-  opacity: 0.3;
-  font-size: 8px;
-  letter-spacing: 0.6em;
+  color: $event-decorated-title-color;
 }
 
 //メニュー
@@ -103,9 +90,6 @@
   padding: 5px 20px 20px 20px;
   display: none;
   &:first-child {
-    margin: -1.5px;
-  }
-  &:first-child {
     display: block;
   }
 }
@@ -125,12 +109,8 @@
     font-weight: 600;
   }
 
-  &__date:before{
+  &__date__icon{
     font-size: 13px;
-    color: $point_color;
-    font-family: FontAwesome;
-    content: "\f073";
-    letter-spacing: 0.5em;
   }
 
   &__area{
@@ -138,12 +118,9 @@
     font-size: 12px;
   }
 
-  &__area:before{
-    color: $point_color;
-    font-size: 13px;
-    font-family: FontAwesome;
-    content: "\f041";
-    letter-spacing: 0.5em;
+  &__area__icon{
+    font-size: 15px;
+    margin: 0 2px;
   }
 
   &__link-more{
@@ -154,16 +131,9 @@
     color:$base_color;
   }
 
-  &__link-more:before {
-    font-family: FontAwesome;
-    content: "\f111";
+  &__link-more__icon{
     font-size: 1px;
     color: #c7b9b1;
-  　letter-spacing: 0.5em;
+  　margin:0 2px;
   }
-}
-
-a:hover p{
-  opacity: 0.7;
-
 }
