@@ -1,7 +1,14 @@
 // ランキング固有の変数
 $flag-width: 12px;
 $flag-color: $point_color;
+
 $ranking-number-color: $off_background-color;
+$ranking-title-margin: $title-margin;
+$ranking-title-size: $title-size;
+$ranking-title-weight: $title-weight;
+$ranking-title-color: $title-color;
+
+$ranking-decorated-title-color: $base_color;
 
 .event_ranking{
   padding: 20px 80px;
@@ -9,31 +16,18 @@ $ranking-number-color: $off_background-color;
   display:flex;
 }
 .ranking-title{
+  margin: $ranking-title-margin;
   font-family: $base_font-family;
-  font-size: 30px;
-  font-weight: 600;
-  color: #60534c;
-  margin: 20px 0;
-
+  font-size: $ranking-title-size;
+  font-weight: $ranking-title-weight;
+  color: $ranking-title-color;
 }
 
 //dot
 
-.decorated-title__decoration{
-  opacity: 0.3;
-  font-size: 8px;
-  letter-spacing: 0.6em;
-}
-
-.ranking-list-item{
-  position: relative;
-  height: 100px;
-  width: 420px;
-  display: flex;
-  padding: 10px 10px;
-  border-top:1px solid #CCC;
-  border-bottom:1px solid #CCC;
-  margin-top: -1px;
+//dot
+.decorated-title__decoration-wrap{
+  color: $ranking-decorated-title-color;
 }
 
 //サムネイル
@@ -60,7 +54,7 @@ $ranking-number-color: $off_background-color;
   width: $flag-width * 2;
   text-align: center;
   position: relative;
-  left: -$flag-width;
+  left: $flag-width;
 }
 
 //テキスト系

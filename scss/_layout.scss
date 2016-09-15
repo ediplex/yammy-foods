@@ -6,9 +6,15 @@
     word-break: break-all;
     height: 16px;
     overflow: hidden;
+    opacity: 0.3;
+    font-size: 8px;
+    letter-spacing: 0.6em;
   }
   &__decoration {
     font-size: 12px;
     letter-spacing: 4px;
+    &:after {
+      content: '●●●●●●●●●●●●●●●●●●●●●●●●';
+    }
   }
 }
