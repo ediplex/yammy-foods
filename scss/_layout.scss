@@ -1,0 +1,17 @@
+// テーマ共有スタイル
+
+.decorated-title {
+  &__decoration-wrap {
+    width: 5em;
+    word-break: break-all;
+    height: 16px;
+    overflow: hidden;
+  }
+  &__decoration {
+    font-size: 12px;
+    letter-spacing: 4px;
+    &:after {
+      content: '●●●●●●●●●●●●●●●●●●●●●●●●';
+    }
+  }
+}
