@@ -1,0 +1,139 @@
+
+$event-title-color: $title-color;
+$event-title-size: $title-size;
+$event-title-weight: $title-weight;
+$event-title-margin: $title-margin;
+
+$event-decorated-title-color: #bbb932;
+
+.event_ranking{
+  padding: 20px 80px;
+  background-color: $off_background-color;
+  display:flex;
+}
+
+.event-title{
+  margin: $event-title-margin;
+  font-family: $base_font-family;
+  font-size: $event-title-size;
+  font-weight: $event-title-weight;
+  color: $event-title-color;
+}
+
+//dot
+.decorated-title__decoration-wrap{
+  color: $event-decorated-title-color;
+}
+
+//メニュー
+.event-tabs-menu{
+  padding: 0;
+  margin: 0;
+}
+
+.event-tabs-menu-item {
+  font-family: $base_font-family;
+  font-size: $base_font-size;
+  color: $off_background-color;
+  background-color: $point_color;
+  font-weight: bold;
+  line-height: 40px;
+  margin: 0;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  display: inline-block;
+  position: relative;
+  //三角部分保留
+
+
+  &__link {
+    display: block;
+    width: 100px;
+    height: 40px;
+    color: $off_background-color;
+  }
+  &__active:after{
+  	top: 100%;
+  	left: 50%;
+  	border-top: 10px solid $point_color;
+    border-bottom: 10px solid transparent;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+  	content: " ";
+  	height: 0;
+  	width: 0;
+  	position: absolute;
+  	margin-left: -7px;
+    z-index: 100;
+  }
+}
+
+
+//リストボックス
+.event-tabs {
+  background-color: $base_background-color;
+  width: 600px;
+  height:470px;
+  margin: 0;
+  padding: 0;
+}
+
+//リストボックス内__アイコンフォント保留
+.event-tab {
+  // width: 600px;
+  margin: 0;
+  font-size: 14px;
+  background-color: $base_background-color;
+  font-family: $base_font-family;
+  font-size: $base_font-size;
+  color: $base_color;
+  padding: 5px 20px 20px 20px;
+  display: none;
+  &:first-child {
+    display: block;
+  }
+}
+
+.event-list-item {
+  border-bottom: solid 1px rgba(96,83,76,0.2);
+  padding:25px 10px;
+  &:last-child {
+    border: none;
+
+  }
+
+  &__date{
+    color: $point_color;
+    font-size: 16px;
+    font-family: Myriad Pro;
+    font-weight: 600;
+  }
+
+  &__date__icon{
+    font-size: 13px;
+  }
+
+  &__area{
+    color: $point_color;
+    font-size: 12px;
+  }
+
+  &__area__icon{
+    font-size: 15px;
+    margin: 0 2px;
+  }
+
+  &__link-more{
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration:none;
+    color:$base_color;
+  }
+
+  &__link-more__icon{
+    font-size: 1px;
+    color: #c7b9b1;
+  　margin:0 2px;
+  }
+}

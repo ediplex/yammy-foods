@@ -7,6 +7,8 @@
   <meta name="description" content="美味しいご飯を紹介するポータルサイト"/>
   <meta name="keywords" content="ご飯,ランチ,ポータルサイト,東京"/>
   <link rel="canonical" href="http://www.yammy-foods.com" />
+  <link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
 
   <!-- OGP -->
   <meta property="og:title" content="美味しいご飯を紹介するポータルサイト">
@@ -20,10 +22,13 @@
   <div>
   </div>
 <!--<![endif]-->
-  
+
   <title>Yummy Foods</title>
   <!-- TODO -->
   <link rel="stylesheet" href="css/main.css">
+  <script src='http://code.jquery.com/jquery.min.js'></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/tabs.js"></script>
 </head>
 <body>
 
@@ -43,15 +48,108 @@
     </section>
 
     <section class="news">
-      おいしいものニュースbbbbb
+      おいしいものニュース
     </section>
 
-    <section class="">
+    <section class="event_ranking">
+
       <section class="event">
-        新着イベント [タブ]
+
+        <div class="event-title decorated-title">
+          <span class="decorated-title__text">新着イベント</span>
+          <div class="decorated-title__decoration-wrap">
+            <div class="decorated-title__decoration"></div>
+          </div>
+        </div>
+
+        <div class="event-content">
+          <!-- tabs-menuここから -->
+          <ul id="event-tabs-menu" class="event-tabs-menu clearfix">
+            <li class="event-tabs-menu-item event-tabs-menu-item__active">
+              <a href="#event-tab1" class="event-tabs-menu-item__link">すべて</a>
+            </li>
+            <li class="event-tabs-menu-item">
+              <a href="#event-tab2" class="event-tabs-menu-item__link">23区</a></li>
+            <li class="event-tabs-menu-item">
+              <a href="#event-tab3" class="event-tabs-menu-item__link">郊外</a></li>
+            <li class="event-tabs-menu-item">
+              <a href="#event-tab4" class="event-tabs-menu-item__link">神奈川</a></li>
+            <li class="event-tabs-menu-item">
+              <a href="#event-tab5" class="event-tabs-menu-item__link">千葉</a></li>
+          </ul>
+          <!-- tabs-menuここまで -->
+
+          <!-- list-boxesここから -->
+         <div id="event-tabs">
+           <div id="event-tab1" class="event-tab">
+             <ul class="event-list">
+               <li class="event-list-item">
+                 <div class="event-list-item__date">
+                   <i class="fa fa-calendar event-list-item__date__icon" aria-hidden="true"></i>
+                   2016.06.04 - 2016.06.05</div>
+                 <div class="event-list-item__area">
+                   <i class="fa fa-map-marker event-list-item__area__icon" aria-hidden="true"></i>
+                   谷中・根津・千駄木エリア</div>
+                 <div class="event-list-item__title">谷中銀座で日本酒スタンプラリー！10個集めると限定グッズがもらえます</div>
+                 <div class="event-list-item__link">
+                   <a href="#" class="event-list-item__link-more">
+                     <i class="fa fa-circle event-list-item__link-more__icon" aria-hidden="true"></i>
+                     詳細を見る</a></div>
+               </li>
+               <li class="event-list-item">
+                 <div class="event-list-item__date">
+                   <i class="fa fa-calendar event-list-item__date__icon" aria-hidden="true"></i>
+                   2016.06.04 - 2016.06.05</div>
+                 <div class="event-list-item__area">
+                   <i class="fa fa-map-marker event-list-item__area__icon" aria-hidden="true"></i>
+                   谷中・根津・千駄木エリア</div>
+                 <div class="event-list-item__title">谷中銀座で日本酒スタンプラリー！10個集めると限定グッズがもらえます</div>
+                 <div class="event-list-item__link">
+                   <a href="#" class="event-list-item__link-more">
+                     <i class="fa fa-circle event-list-item__link-more__icon" aria-hidden="true"></i>
+                     詳細を見る</a></div>
+               </li>
+               <li class="event-list-item">
+                 <div class="event-list-item__date">
+                   <i class="fa fa-calendar event-list-item__date__icon" aria-hidden="true"></i>
+                   2016.06.04 - 2016.06.05</div>
+                 <div class="event-list-item__area">
+                   <i class="fa fa-map-marker event-list-item__area__icon" aria-hidden="true"></i>
+                   谷中・根津・千駄木エリア</div>
+                 <div class="event-list-item__title">谷中銀座で日本酒スタンプラリー！10個集めると限定グッズがもらえます</div>
+                 <div class="event-list-item__link">
+                   <a href="#" class="event-list-item__link-more">
+                     <i class="fa fa-circle event-list-item__link-more__icon" aria-hidden="true"></i>
+                     詳細を見る</a></div>
+               </li>
+               <li class="event-list-item">
+                 <div class="event-list-item__date">
+                   <i class="fa fa-calendar event-list-item__date__icon" aria-hidden="true"></i>
+                   2016.06.04 - 2016.06.05</div>
+                 <div class="event-list-item__area">
+                   <i class="fa fa-map-marker event-list-item__area__icon" aria-hidden="true"></i>
+                   谷中・根津・千駄木エリア</div>
+                 <div class="event-list-item__title">谷中銀座で日本酒スタンプラリー！10個集めると限定グッズがもらえます</div>
+                 <div class="event-list-item__link">
+                   <a href="#" class="event-list-item__link-more">
+                     <i class="fa fa-circle event-list-item__link-more__icon" aria-hidden="true"></i>
+                     詳細を見る</a></div>
+               </li>
+
+               </li>
+             </ul>
+           </div>
+           <div id="event-tab2" class="event-tab">event-tab2</div>
+           <div id="event-tab3" class="event-tab">event-tab3</div>
+           <div id="event-tab4" class="event-tab">event-tab4</div>
+           <div id="event-tab5" class="event-tab">event-tab5</div>
+           </div>
+        </div>
+        <!-- list-boxesここまで -->
       </section>
+
       <section class="ranking">
-        ランキング [リスト]
+        <div class="event-title"><p>ランキング</p></div>
       </section>
     </section>
 
