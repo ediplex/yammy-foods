@@ -1,1 +1,96 @@
+// ランキング固有の変数
+$flag-width: 12px;
+$flag-color: $point_color;
 
+$ranking-number-color: $off_background-color;
+$ranking-title-margin: $title-margin;
+$ranking-title-size: $title-size;
+$ranking-title-weight: $title-weight;
+$ranking-title-color: $title-color;
+
+$ranking-decorated-title-color: $base_color;
+
+.event_ranking{
+  padding: 20px 80px;
+  background-color: $off_background-color;
+  display:flex;
+}
+.ranking-title{
+  margin: $ranking-title-margin;
+  font-family: $base_font-family;
+  font-size: $ranking-title-size;
+  font-weight: $ranking-title-weight;
+  color: $ranking-title-color;
+}
+
+//dot
+
+//dot
+.decorated-title__decoration-wrap{
+  color: $ranking-decorated-title-color;
+}
+
+//サムネイル
+.ranking-list-item-thumbnail{
+  display: inline-block;
+  position:relative;
+}
+
+.ranking-list-item__flag{
+  // display: inline-block;
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  border-top: 1px solid $flag-color;
+  border-right: $flag-width solid $flag-color;
+  border-bottom: 6px solid transparent;
+  border-left: $flag-width solid $flag-color;
+  width: 10px;
+}
+
+.ranking-list-item__number{
+  // display: inline-block;
+  color: $ranking-number-color;
+  width: $flag-width * 2;
+  text-align: center;
+  position: relative;
+  left: $flag-width;
+}
+
+//テキスト系
+.ranking-list-item-content{
+  display: inline-block;
+  // position: relative;
+  height: 80px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.ranking-list-item-content__text{
+  font: $base_font-family;
+  font-size: 12px;
+}
+.ranking-list-item-content__time{
+  font: $base_font-family;
+  font-size: 12px;
+  color: $point_color;
+  position: absolute;
+  bottom: 10px;
+  margin: 0;
+}
+
+
+//top30を見る
+.ranking-list-footer__more{
+  float: right;
+  font-weight: bold;
+  text-decoration:none;
+  color:$base_color;
+}
+
+.ranking-list-footer__more:before{
+  color: #c7b9b1;
+  font-size: 1px;
+  font-family: FontAwesome;
+  content: "\f111";
+  }
