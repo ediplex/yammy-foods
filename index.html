@@ -18,6 +18,8 @@
   <meta property="og:site_name" content="Yummy Foods">
   <meta property="og:description" content="美味しいご飯を紹介するポータルサイト">
 
+  <link rel="stylesheet" href="css/slider-pro.min.css">
+
   <!--[if (gte IE 9)|!(IE)]><!-->
   <div>
   </div>
@@ -43,8 +45,13 @@
   </header>
 
   <main>
-    <section class="hero">
-      [hero] スライド
+    <section class="hero-slide">
+      <ul id="slider">
+        <li class="sp-slides"><img class="sp-image" src="img/silde1.jpg"></li>
+        <li class="sp-slides"><img class="sp-image" src="img/silde1.jpg"></li>
+        <li class="sp-slides"><img class="sp-image" src="img/silde1.jpg"></li>
+        <li class="sp-slides"><img class="sp-image" src="img/silde1.jpg"></li>
+      </ul>
     </section>
 
     <section class="news">
@@ -234,4 +241,13 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/jquery.sliderPro.min.js"></script>
+  <script>
+    $(function(){
+    $('#slider').sliderPro();
+    });
+  </script>
+
 </html>
