@@ -1,0 +1,70 @@
+//作業始めます。
+.feature{
+  background-color:  #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 385px;
+}
+
+.feature__container{
+  background-color:  #888;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+
+  align-items: center;
+
+  width:1050px;
+  height:255px;
+
+}
+
+.feature__title-container{
+  background-color:  #777;
+  display: flex;
+
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+
+  width:100%;
+
+}
+
+.feature__title{
+  background-color:  #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.feature__title-underline{
+  background-color:  #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.feature__img-container{
+  background-color:  #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+
+.feature__banner{
+  background-color:  #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:500px;
+  height:180px;
+}
